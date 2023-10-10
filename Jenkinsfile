@@ -1,10 +1,14 @@
 //Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker 'python:3.5.1' }
+    agent { docker 
+                { 
+                    image 'ubuntu:20.04'
+                } 
+            }
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'echo "hello world"'
             }
         }
     }
