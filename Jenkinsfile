@@ -1,14 +1,10 @@
 //Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker 
-                { 
-                    image 'ubuntu:20.04'
-                } 
-            }
+    agent any 
     stages {
-        stage('build') {
+        stage('Stage 1') {
             steps {
-                sh 'echo "hello world"'
+                echo 'Hello world!' 
             }
         }
     }
