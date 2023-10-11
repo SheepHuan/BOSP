@@ -11,9 +11,6 @@ jobs:
       # check out the repository
       - name: Checkout    
         uses: actions/checkout@v2    #这里使用了github官方提供的action,checkout项目到虚拟机上
-
-      - name: Hello world
-        run: echo "hello world"
       
-      - name: Python version
-        run: python --version
+      - name: Check
+        run: cd BOSP ; chmod +x build_onnxruntime.sh ; ./build_onnxruntime
