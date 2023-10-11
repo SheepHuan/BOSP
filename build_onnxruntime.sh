@@ -1,7 +1,7 @@
 #!/bin/bash
 export tag=v1.16.0
 export root_path="/tmp/onnxruntime@$tag"
-
+# cd BOSP ; chmod +x build_onnxruntime.sh ; ./build_onnxruntime
 # install dependency
 apt update
 apt install wget -y
