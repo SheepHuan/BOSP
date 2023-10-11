@@ -14,3 +14,6 @@ jobs:
 
       - name: Hello world
         run: echo "hello world"
+      
+      - name: Python version
+        run: python --version
